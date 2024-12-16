@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Yi-Yao Fan" />
+    <meta name="description" content="WeHelp第六屆申請" />
+    <link rel="icon" href="https://img.icons8.com/ios-glyphs/90/resume.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC&display=swap" rel="stylesheet" />
+    <title>Resume for WeHelp</title>
+  </head>
+  <body>
+    <header>
+      <div class="left"></div>
+      <div class="middle"><h1 title="for WeHelp">個人簡歷</h1></div>
+      <div class="right">
+        <button class="fonts">切換字體</button>
+      </div>
+    </header>
+
+    <!-- <hr /> -->
+    <main>
+      <div>
+        <a title="開啟圖片" href="./pexels-jplenio-1632790.jpg" target="_blank">
+          <img src="./pexels-jplenio-1632790.jpg" alt="tree" />
+        </a>
+      </div>
+
+      <article>
+        <h2>個人簡介和申請動機</h2>
+        <p>
+          畢業於中正大學物理學系、交通大學物理研究所碩士班，曾在經濟部智慧財產局擔任專利助理審查官。
+          <!-- <br /> -->
+          在學期間有使用Ｃ語言分析數據的經驗，因此了解寫程式的過程並不容易，但也發現自己能夠在透過程式設計解決問題時感到滿足。
+          <strong>我想要累積有價值的東西</strong>，也希望獲得解決問題時產生的成就感，那麼成為軟體工程師似乎是個好選擇。
+        </p>
+      </article>
+
+      <article>
+        <h2>曾經做過哪些軟體工程技術相關的學習</h2>
+        <p>透過 Udemy 線上課程以及教學網站(<a class="w3" title="Learn to Code With the world's largest web developer site." target="_blank" href="https://www.w3schools.com/">w3schools</a>)學過一些網頁開發的基礎(HTML、CSS、JavaScript)。</p>
+      </article>
+
+      <article>
+        <h2>如果參與這個訓練，會怎麼安排學習時間</h2>
+        <p>模擬一般上班情況，每天花六到八小時在訓練上。 將大部分的心力投注在實作訓練，其餘時間則用來學習。大原則是在每周任務開始之前都能夠先擁有基本的背景知識，如此才能夠將大部分的心力投注在實作上。</p>
+      </article>
+
+      <article>
+        <h2>軟體技術日新月異，如何確定選擇投入的領域是正確有回報的</h2>
+        <p>軟體工程領域五花八門，儘管我查看了不少相關資訊但仍舊只有表面上的理解。考量到自己並非本科系出身，我想以相對容易入門的網頁開發作為起點，相信在進入業界之後便能夠更準確的評估該問題。而且若是能夠獲得<strong>軟體工程師的解題思維</strong>，就算日後想要轉換至不同領域，之前所累積的經驗也不會白費。</p>
+      </article>
+
+      <article>
+        <h2>請描述一件產生明顯負面情緒的經歷，如何處理該情緒</h2>
+        <p>曾經在國營事業聯招複試的體測環節被刷掉，投入數個月的心血在一瞬間化為烏有感覺非常難受。為了減少精神內耗我試圖轉移注意力，在短暫的休息過後重整旗鼓並專注在能做的事情上，如此一來隨著時間過去也漸漸的不再感到那麼痛苦了。</p>
+      </article>
+
+      <article>
+        <h2>關於這份申請網頁，分享一個開發時的技術心得</h2>
+        <p>
+          使用 Google Fonts 改變字體時發現 font-family 屬性具有 inherited 之特性，因此不需要各別為每一個具有文字內容的元素設定字體十分便利，此一繼承特性可在 <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-family#formal_definition" target="_blank">mdn</a> 網站中確認。
+          此外，儘管某些屬性沒有可被繼承的特性，仍可在該些後代設定 inherit <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance#controlling_inheritance" target="_blank">特殊屬性值</a>使其繼承。
+        </p>
+      </article>
+
+      <article>
+        <h2>如何看待自身工作和整個社會群體的連結關係</h2>
+        <p>意識到需求的存在，提供能滿足需求的商品，收取相應的報酬。</p>
+      </article>
+
+      <article>
+        <h2>其他想要對我們說的事情</h2>
+        <p>雖然學了一些有關網頁開發的基礎，但對於自己是否真的掌握所學感到迷惘，因此想透過 WeHelp 課程引導我累積實作經驗，<strong>為轉職之路提供堅實的底蘊</strong>。</p>
+      </article>
+    </main>
+    <!-- <hr /> -->
+    <footer>
+      <p class="icons8"><a target="_blank" href="https://icons8.com/icon/61016/resume">Resume</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a></p>
+    </footer>
+
+    <script>
+      const button = document.querySelector("button.fonts");
+      const body = document.querySelector("body");
+      button.addEventListener("click", changeFonts);
+      console.log(body.style.fontFamily);
+      function changeFonts() {
+        if (body.style.fontFamily == ("" || "unset")) {
+          body.style.fontFamily = '"LXGW WenKai TC", cursive';
+          button.style.fontFamily = "initial";
+        } else {
+          body.style.fontFamily = "unset";
+          button.style.fontFamily = '"LXGW WenKai TC", cursive';
+        }
+      }
+    </script>
+  </body>
+</html>
