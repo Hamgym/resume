@@ -49,7 +49,7 @@ header button {
   cursor: pointer;
   border: 2px solid lightgray;
   border-radius: 1.5rem;
-  width: 7rem;
+  width: fit-content;
   height: 3rem;
   margin-right: 2rem;
   background-color: inherit;
